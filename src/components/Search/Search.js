@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../Card/Card";
+import CardComponent from "../Card/CardComponent.js";
 import "./Search.css";
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,6 +24,10 @@ const Search = () => {
         <a href="/">Trending</a>
         <a href="/">Top 20</a>
       </nav>
+      <small style={{ fontWeight: "100" }}>
+        Above links not working yet!!! Wellll you still can Search ;)
+      </small>
+
       <div className="form">
         <form onSubmit={searchHandle} className="search-div">
           <input
@@ -35,10 +39,14 @@ const Search = () => {
       </div>
       <div className="card-container">
         {searchData.length === 0 ? (
-          <h1>No Result Found</h1>
+          <h2>No Result to show yet</h2>
         ) : (
           searchData.map((data, index) => {
-            return <Card searchInfo={data} key={index} />;
+            return (
+              <div>
+                <CardComponent searchInfo={data} key={data.id} />
+              </div>
+            );
           })
         )}
       </div>
