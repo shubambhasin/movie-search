@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+header {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 78, 78);
+}
