@@ -4,3 +4,9 @@ header {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 78, 78);
 }
+
+@media (max-width: 320px) {
+  header {
+    font-size: small;
+  }
+}
