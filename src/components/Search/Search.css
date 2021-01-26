@@ -54,6 +54,11 @@ nav {
   border: none;
   border-radius: 10px;
 }
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
 @media (max-width: 420px) {
   .search nav a {
