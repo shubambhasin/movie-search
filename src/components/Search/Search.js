@@ -49,11 +49,11 @@ const Search = () => {
         <a href="/">Trending</a>
         <a href="/">Top 20</a>
       </nav>
-      <Router>
+      {/* <Router>
         <Link to="/topmovies">Top Movies</Link>
         <Link to="/topTvShows">Top TVShows</Link>
         <Link to="/Trending">Trending</Link>
-      </Router>
+      </Router> */}
       <small style={{ fontWeight: "100" }}>
         Above links not working yet!!! Wellll you still can Search ;)
       </small>
