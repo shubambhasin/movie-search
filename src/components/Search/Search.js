@@ -58,7 +58,7 @@ const Search = () => {
         Above links not working yet!!! Wellll you still can Search ;)
       </small>
 
-      <button onClick={check}>Click</button>
+      {/* <button onClick={check}>Click</button> */}
 
       <div className="form">
         <form onSubmit={searchHandle} className="search-div">
